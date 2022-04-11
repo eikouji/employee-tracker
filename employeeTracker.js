@@ -19,59 +19,59 @@ function initialPrompt() {
     inquirer.prompt(initialPrompt).then(function ({ job }) {
         switch (job) {
             // view //
-            case: "View Employees":
+            case "View Employees":
             viewEmployees();
             break;
 
-            case: "View Employees by Department":
+            case "View Employees by Department":
             viewEmployeeDept();
             break;
 
-            case: "View Departments":
+            case "View Departments":
             viewDept();
             break;
 
-            case: "View Department Budget":
+            case "View Department Budget":
             viewDeptBudget();
             break;
             
-            case: "View Managers";
+            case "View Managers":
             viewManagers();
             break; 
-            
+
             // add //
 
-            case: "Add Employee":
+            case "Add Employee":
             addEmployee();
             break;
 
-            case: "Add Role":
+            case "Add Role":
             addJob();
             break;
 
-            case: "Add Department"
+            case "Add Department":
             addDepartment();
             break;
 
-            case: "Add Manager"
+            case "Add Manager":
             addManager();
             break;
 
             // update //
 
-            case: "Update Employee"
+            case "Update Employee":
             updateEmployee();
             break;
 
-            case: "Update Department"
+            case "Update Department":
             updateDepartment();
             break;
 
-            case: "Update Department Budget"
+            case "Update Department Budget":
             updateDeptBudget();
             break;
 
-            case: "Update Manager"
+            case"Update Manager":
             updateManager();
             break;
         }
