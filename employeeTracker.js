@@ -20,7 +20,7 @@ function initialPrompt() {
         switch (job) {
             // view //
             case: "View Employees":
-            viewEmployee();
+            viewEmployees();
             break;
 
             case: "View Employees by Department":
@@ -35,13 +35,17 @@ function initialPrompt() {
             viewDeptBudget();
             break;
             
+            case: "View Managers";
+            viewManagers();
+            break; 
+            
             // add //
 
             case: "Add Employee":
             addEmployee();
             break;
 
-            case: "Add Job":
+            case: "Add Role":
             addJob();
             break;
 
@@ -49,10 +53,26 @@ function initialPrompt() {
             addDepartment();
             break;
 
+            case: "Add Manager"
+            addManager();
+            break;
+
             // update //
 
             case: "Update Employee"
-            updateEmploye();
+            updateEmployee();
+            break;
+
+            case: "Update Department"
+            updateDepartment();
+            break;
+
+            case: "Update Department Budget"
+            updateDeptBudget();
+            break;
+
+            case: "Update Manager"
+            updateManager();
             break;
         }
     })

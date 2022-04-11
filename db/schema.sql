@@ -1,5 +1,9 @@
 /* create DATABASE */
 DROP DATABASE IF EXISTS employeeDB;
+DROP DATABASE IF EXISTS departments;
+DROP DATABASE IF EXISTS roles;
+DROP DATABASE IF EXISTS employee;
+
 CREATE DATABASE employeeDB;
 USE employeeDB;
 
@@ -12,7 +16,7 @@ CREATE TABLE departments (
 
 
 /* role */
-CREATE TABLE role (
+CREATE TABLE roles (
     id INTEGER AUTO_INCREMENT
     title VARCHAR(30) NOT NULL,
     salary decimal NOT NULL,
